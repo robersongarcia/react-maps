@@ -14,6 +14,7 @@ export function MapView (): JSX.Element {
   useLayoutEffect(() => {
     
     if(!isLoading){
+
       const map = new mapboxgl.Map({
         container: mapDiv.current || '', // container ID
         style: 'mapbox://styles/mapbox/streets-v12', // style URL
